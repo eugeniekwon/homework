@@ -2,8 +2,20 @@
     Section-4
 ============= */
 #section-4{
-    img{
-        width: 100%;
+    display: grid;
+    grid-template-columns: 0 auto 0;
+    grid-template-areas: ". section-4 .";
+    
+    ul{
+        grid-area: section-4;
+        display: grid;
+        row-gap: 10px;
+        
+        li{
+            img{
+                width: 100%;
+            }
+        }
     }
 }
 
