@@ -458,30 +458,33 @@ textarea {
 /* =============
     Section-5
 ============= */
-#section-5 {
+@media (min-width: 992px) {
+  #section-5 {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-tempplate-areas: ""; } }
+
+#section-5 aside img {
+  width: 100%; }
+
+@media (min-width: 768px) {
+  #section-5 aside {
+    margin: 10%; } }
+
+@media (min-width: 992px) {
+  #section-5 aside {
+    margin: 5%; } }
+
+#section-5 #section-5-container {
   display: grid;
   grid-template-columns: 10px auto 10px;
   grid-template-areas: ". section-5 ."; }
-  #section-5 img {
-    width: 100%; }
-  #section-5 #section-5-container {
+  @media (min-width: 768px) {
+    #section-5 #section-5-container {
+      grid-template-columns: 20% auto 20%; } }
+  #section-5 #section-5-container #section-5-content {
     grid-area: section-5; }
-    @media (min-width: 768px) {
-      #section-5 #section-5-container #section-5-content-image {
-        display: grid;
-        grid-template-columns: 20% auto 20%;
-        grid-template-areas: ". section-5-content-image ."; } }
-    @media (min-width: 768px) {
-      #section-5 #section-5-container #section-5-image {
-        grid-area: section-5-content-image; } }
-    @media (min-width: 768px) {
-      #section-5 #section-5-container #section-5-content-words {
-        display: grid;
-        grid-template-columns: 15% auto 15%;
-        grid-template-areas: ". section-5-content-words ."; } }
-    @media (min-width: 768px) {
-      #section-5 #section-5-container #section-5-words {
-        grid-area: section-5-content-words; } }
+
 /* =============
     Footer
 ============= */
