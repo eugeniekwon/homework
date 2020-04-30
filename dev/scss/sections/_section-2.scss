@@ -3,22 +3,33 @@
 ============= */
 #section-2{
 
-    aside{
-        img{
-            width: 100%;
-        }
-    }
-   
-    #section-2-container{
-    
-        display: grid; 
+    display: grid; 
         grid-template-columns: 10px auto 10px;
         grid-template-areas: ". section-2 .";
-        
-    #section-2-content{
+
+
+    #section-2-container{
         grid-area: section-2;
-        padding-top: 60px;
-        padding-bottom: 60px;
+        
+        aside{
+            img{
+                width: 100%;
+            }
+        }
+
+    #section-2-content{
+        @include md{
+            display: grid;
+            grid-template-columns: 10% auto;
+            grid-template-areas: ". section-2-content-text";
+        }
+        
+        @include md{
+            #section-2-content-text{
+                grid-area: section-2-content-text;
+                }
+            }
+
         }
     }
 }
