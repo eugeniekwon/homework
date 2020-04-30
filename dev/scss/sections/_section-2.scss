@@ -3,33 +3,40 @@
 ============= */
 #section-2{
 
-    display: grid; 
-        grid-template-columns: 10px auto 10px;
-        grid-template-areas: ". section-2 .";
-
-
     #section-2-container{
-        grid-area: section-2;
         
         aside{
             img{
                 width: 100%;
             }
         }
-
+        
     #section-2-content{
+        display: grid; 
+        grid-template-columns: 10px auto 10px;
+        grid-template-areas: ". section-2-content .";
+        }
+
         @include md{
             display: grid;
-            grid-template-columns: 10% auto;
-            grid-template-areas: ". section-2-content-text";
+            grid-template-columns: 40% 60%;
+            grid-template-areas: ". section-2-content";
         }
-        
-        @include md{
-            #section-2-content-text{
-                grid-area: section-2-content-text;
+
+        @include lg{
+            display: grid;
+            grid-template-columns: 40% 60%;
+            grid-template-areas: ". section-2-content";
+            margin: 2%;
+        }
+
+        #section-2-content-text{
+            grid-area: section-2-content;
+                }
+
+                @include md{
+                    grid-area: section-2-content;
                 }
             }
 
         }
-    }
-}
