@@ -1,54 +1,53 @@
 /* =============
     Section-4
 ============= */
-#section-4{
+#section-4 {
     display: grid;
     grid-template-columns: 0 auto 0;
     grid-template-areas: ". section-4 .";
-    
-    ul{
+
+    ul {
         grid-area: section-4;
         display: grid;
         gap: 20px;
-        
-        @include md{
+
+        @include md {
             grid-template-columns: repeat (2, 1fr);
-            grid-template-areas: 
-            "g1 g1"
-            "g2 g3";
+            grid-template-areas:
+                "g1 g1"
+                "g2 g3";
         }
 
-        @include lg{
+        @include lg {
             grid-template-columns: repeat (2, 1fr);
-            grid-template-areas: 
-            "g1 g2"
-            "g1 g3";
+            grid-template-areas:
+                "g1 g2"
+                "g1 g3";
             margin: 2%;
         }
 
-        li{
-            img{
+        li {
+            img {
                 width: 100%;
             }
         }
 
-        #g1{
-            @include md{
+        #g1 {
+            @include md {
                 grid-area: g1;
             }
         }
 
-        #g2{
-            @include md{
+        #g2 {
+            @include md {
                 grid-area: g2;
             }
         }
 
-        #g3{
-            @include md{
+        #g3 {
+            @include md {
                 grid-area: g3;
             }
         }
     }
 }
-
