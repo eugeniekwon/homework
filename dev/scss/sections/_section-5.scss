@@ -13,7 +13,7 @@
         @include lg{
             display: grid;
             grid-template-columns: 40% 60%;
-            grid-tempplate-areas: ""
+            grid-template-areas: ". section-5 ."
         }
     
         @include xl{

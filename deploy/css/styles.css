@@ -475,7 +475,7 @@ textarea {
   #section-5 #section-5-desktop {
     display: grid;
     grid-template-columns: 40% 60%;
-    grid-tempplate-areas: ""; } }
+    grid-template-areas: ". section-5 ."; } }
 
 @media (min-width: 1200px) {
   #section-5 #section-5-desktop {
