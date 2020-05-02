@@ -4,19 +4,26 @@
 #section-2 {
 
     @include xl{
-
-    }
+        display: grid;
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". section-2-container ."
+        }
 
     #section-2-container {
+
         @include md {
             display: grid;
             grid-template-columns: 40% auto;
             grid-template-areas: "aside section-2-section";
-            gap:20px;
-        }
+            gap: 20px;
+            }
         @include lg{
             grid-template-columns: 50% 50%;
-        }
+            }
+
+        @include xl{ 
+            grid-area: section-2-container;
+            }    
 
         aside {
             @include md {
@@ -28,7 +35,9 @@
             }
         }
 
+
         #section-2-content {
+
             display: grid;
             grid-template-columns: 10px auto 10px;
             grid-template-areas: ". section-2-content-text .";
@@ -40,6 +49,7 @@
             @include lg {
                 grid-template-columns: auto 50% auto;
             }
+
 
             #section-2-content-text {
                 grid-area: section-2-content-text;

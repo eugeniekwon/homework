@@ -368,6 +368,12 @@ textarea {
 /* =============
     Section-2
 ============= */
+@media (min-width: 1200px) {
+  #section-2 {
+    display: grid;
+    grid-template-columns: auto 1200px auto;
+    grid-template-areas: ". section-2-container ."; } }
+
 @media (min-width: 768px) {
   #section-2 #section-2-container {
     display: grid;
@@ -378,6 +384,10 @@ textarea {
 @media (min-width: 992px) {
   #section-2 #section-2-container {
     grid-template-columns: 50% 50%; } }
+
+@media (min-width: 1200px) {
+  #section-2 #section-2-container {
+    grid-area: section-2-container; } }
 
 @media (min-width: 768px) {
   #section-2 #section-2-container aside {
@@ -411,22 +421,13 @@ textarea {
   grid-template-areas: ". section-3 ."; }
   @media (min-width: 768px) {
     #section-3 #section-3-container {
-      display: grid;
-      grid-template-columns: 15% auto 15%;
-      grid-template-areas: ". section-3 ."; } }
+      grid-template-columns: 15% auto 15%; } }
   @media (min-width: 992px) {
     #section-3 #section-3-container {
-      display: grid;
-      grid-template-columns: 24% auto 24%;
-      grid-template-areas: ". section-3 ."; } }
+      grid-template-columns: 25% auto 25%; } }
   #section-3 #section-3-container #section-3-content {
     grid-area: section-3; }
-    @media (min-width: 768px) {
-      #section-3 #section-3-container #section-3-content {
-        grid-area: section-3; } }
-    @media (min-width: 992px) {
-      #section-3 #section-3-container #section-3-content {
-        grid-area: section-3; } }
+
 /* =============
     Section-4
 ============= */
@@ -434,6 +435,9 @@ textarea {
   display: grid;
   grid-template-columns: 0 auto 0;
   grid-template-areas: ". section-4 ."; }
+  @media (min-width: 1200px) {
+    #section-4 {
+      grid-template-columns: auto 1200px auto; } }
   #section-4 ul {
     grid-area: section-4;
     display: grid;
@@ -461,31 +465,41 @@ textarea {
 /* =============
     Section-5
 ============= */
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   #section-5 {
+    display: grid;
+    grid-template-columns: auto 1200px auto;
+    grid-template-areas: ". section-3-desktop ."; } }
+
+@media (min-width: 992px) {
+  #section-5 #section-5-desktop {
     display: grid;
     grid-template-columns: 40% 60%;
     grid-tempplate-areas: ""; } }
 
-#section-5 aside img {
+@media (min-width: 1200px) {
+  #section-5 #section-5-desktop {
+    grid-area: section-3-desktop; } }
+
+#section-5 #section-5-desktop aside img {
   width: 100%; }
 
 @media (min-width: 768px) {
-  #section-5 aside {
+  #section-5 #section-5-desktop aside {
     margin: 10%; } }
 
 @media (min-width: 992px) {
-  #section-5 aside {
+  #section-5 #section-5-desktop aside {
     margin: 5%; } }
 
-#section-5 #section-5-container {
+#section-5 #section-5-desktop #section-5-container {
   display: grid;
   grid-template-columns: 10px auto 10px;
   grid-template-areas: ". section-5 ."; }
   @media (min-width: 768px) {
-    #section-5 #section-5-container {
+    #section-5 #section-5-desktop #section-5-container {
       grid-template-columns: 20% auto 20%; } }
-  #section-5 #section-5-container #section-5-content {
+  #section-5 #section-5-desktop #section-5-container #section-5-content {
     grid-area: section-5; }
 
 /* =============

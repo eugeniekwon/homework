@@ -3,37 +3,50 @@
 ============= */
 #section-5{
 
-    @include lg{
+    @include xl{
         display: grid;
-        grid-template-columns: 40% 60%;
-        grid-tempplate-areas: ""
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". section-3-desktop .";
     }
-
-    aside{
-        img{
-            width: 100%;
+    
+    #section-5-desktop{
+        @include lg{
+            display: grid;
+            grid-template-columns: 40% 60%;
+            grid-tempplate-areas: ""
+        }
+    
+        @include xl{
+            grid-area: section-3-desktop;
+        }
+    
+        aside{
+            img{
+                width: 100%;
+            }
+            
+            @include md{
+                margin: 10%;
+            }
+    
+            @include lg{
+                margin: 5%;
+            }
         }
         
+    #section-5-container{
+        display: grid;
+        grid-template-columns: 10px auto 10px;
+        grid-template-areas: ". section-5 .";
+    
         @include md{
-            margin: 10%;
+            grid-template-columns: 20% auto 20%;
         }
-
-        @include lg{
-            margin: 5%;
+        
+        #section-5-content{
+            grid-area: section-5;
+        }
         }
     }
     
-#section-5-container{
-    display: grid;
-    grid-template-columns: 10px auto 10px;
-    grid-template-areas: ". section-5 .";
-
-    @include md{
-        grid-template-columns: 20% auto 20%;
-    }
-    
-    #section-5-content{
-        grid-area: section-5;
-    }
-    }
 }
