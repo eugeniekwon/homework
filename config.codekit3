@@ -30,17 +30,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/deploy/img/section-1/hero.jpg": {
-		"ft": 16384,
-		"iS": 139334,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/section-1/hero.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
 	"/deploy/img/section-2/hero-2.jpg": {
 		"ft": 16384,
 		"iS": 81623,
@@ -49,7 +38,7 @@
 		"oAP": "/deploy/img/section-2/hero-2.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/img/section-3/hero-3.jpg": {

@@ -355,16 +355,22 @@ textarea {
 /* =============
     Section-1
 ============= */
-#section-1 #section-1-container {
-  display: grid;
-  grid-template-columns: 18px auto;
-  grid-template-areas: ". section-1 ."; }
-  #section-1 #section-1-container #section-1-content {
-    grid-area: section-1; }
-
-#section-1 img {
-  width: 100%; }
-
+#section-1 {
+  background-image: url("../img/section-1/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -10px 0;
+  height: 50vh; }
+  @media (min-width: 768px) {
+    #section-1 {
+      background-position: center;
+      height: 50vh; } }
+  @media (min-width: 992px) {
+    #section-1 {
+      height: 60vh; } }
+  @media (min-width: 1200px) {
+    #section-1 {
+      height: 70vh; } }
 /* =============
     Section-2
 ============= */
@@ -389,13 +395,24 @@ textarea {
   #section-2 #section-2-container {
     grid-area: section-2-container; } }
 
-@media (min-width: 768px) {
-  #section-2 #section-2-container aside {
-    grid-area: aside; } }
-
-#section-2 #section-2-container aside img {
-  width: 100%; }
-
+#section-2 #section-2-container aside {
+  background-image: url("../img/section-2/hero-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 55vh; }
+  @media (min-width: 768px) {
+    #section-2 #section-2-container aside {
+      background-position: -5px 0;
+      height: 40vh; } }
+  @media (min-width: 768px) and (min-width: 992px) {
+    #section-2 #section-2-container aside {
+      background-position: center;
+      height: 70vh; } }
+  @media (min-width: 768px) and (min-width: 1200px) {
+    #section-2 #section-2-container aside {
+      background-position: center;
+      height: 90vh; } }
 #section-2 #section-2-container #section-2-content {
   display: grid;
   grid-template-columns: 10px auto 10px;

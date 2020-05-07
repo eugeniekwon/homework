@@ -3,18 +3,33 @@
 ============= */
 #section-1{
 
-    #section-1-container{
+    // #section-1-container{
     
-        display: grid; 
-        grid-template-columns: 18px auto;
-        grid-template-areas: ". section-1 .";
+    //     display: grid; 
+    //     grid-template-columns: 18px auto;
+    //     grid-template-areas: ". section-1 .";
         
-    #section-1-content{
-        grid-area: section-1;
-        }
+    // #section-1-content{
+    //     grid-area: section-1;
+    //     }
+    // }
+
+    background-image: url('../img/section-1/hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -10px 0;
+    height: 50vh;
+    
+    @include md{
+        background-position: center;
+        height: 50vh;
     }
 
-    img{
-        width: 100%;
+    @include lg{
+        height: 60vh;
+    }
+
+    @include xl{
+        height: 70vh;
     }
 }

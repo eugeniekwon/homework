@@ -27,13 +27,36 @@
             }    
 
         aside {
-            @include md {
-                grid-area: aside;
+            // @include md {
+            //     grid-area: aside;
+            // }
+
+            // img {
+            //     width: 100%;
+            // }
+            background-image: url('../img/section-2/hero-2.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 55vh;
+            
+            @include md{
+                background-position: -5px 0;
+                height: 40vh;
+
+            @include lg{
+                background-position: center;
+                height: 70vh;
             }
 
-            img {
-                width: 100%;
+            @include xl{
+                background-position: center;
+                height: 90vh;
             }
+
+            }
+            
+            
         }
 
 
