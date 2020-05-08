@@ -2,11 +2,17 @@
     Header
 ============= */
 header{
+
+    h1{
+        color: $gray;
+    }
+
     background-color: $white;
     left: 0;
     position: fixed;
     top: 0;
     width: 100%;
+
 
     >div {
         display: grid;
@@ -17,10 +23,10 @@ header{
 
         @include lg{
             grid-template-areas: "logo nav";
-            grid-template-columns: 80% auto;
+            grid-template-columns: 50% auto;
         }
 
-        #logo {
+        #logo-container {
             grid-area: logo;
             padding: 20px;
         }
@@ -38,6 +44,8 @@ header{
 
             i{
                 cursor: pointer;
+                font-size: rem-calc(20);
+                color: $gray;
             }
         }
 
