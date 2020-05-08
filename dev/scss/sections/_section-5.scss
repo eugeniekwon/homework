@@ -26,11 +26,11 @@
             }
             
             @include md{
-                margin: 10%;
+                margin: 0px 220px;
             }
     
             @include lg{
-                margin: 5%;
+                margin: 0px 10px;
             }
         }
         
@@ -38,13 +38,16 @@
         display: grid;
         grid-template-columns: 10px auto 10px;
         grid-template-areas: ". section-5 .";
+        margin: 20px 0px;
+        color: $gray;
     
         @include md{
             grid-template-columns: 20% auto 20%;
         }
-        
+    
         #section-5-content{
             grid-area: section-5;
+            
         }
         }
     }

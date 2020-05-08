@@ -2,6 +2,7 @@
     Footer
 ============= */
 footer{
+    background-color: $green;
     display: grid;
     grid-template-columns: 45% auto 45%;
     grid-template-areas: ". footer .";

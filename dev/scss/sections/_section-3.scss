@@ -3,8 +3,25 @@
 ============= */
 #section-3{
     aside{
-        img{
-            width: 100%;
+        // img{
+        //     width: 100%;
+        // }
+        background-image: url('../img/section-3/hero-3.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 70vh;
+
+        @include md{
+            height: 60vh;
+        }
+
+        @include lg{
+            height: 80vh;
+        }
+
+        @include xl{
+            height: 90vh;
         }
     }
     
@@ -15,6 +32,7 @@
         display: grid; 
         grid-template-columns: 10px auto 10px;
         grid-template-areas: ". section-3 .";
+        color: $green;
 
         @include md{
             grid-template-columns: 15% auto 15%;
