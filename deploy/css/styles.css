@@ -352,7 +352,7 @@ h2 {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 1.625rem;
-  text-align: justify; }
+  text-align: center; }
   @media (min-width: 768px) {
     h2 {
       font-size: 2.1875rem; } }
@@ -448,7 +448,7 @@ header {
         font-size: 1.25rem;
         color: #474747; }
     header > div #nav-container {
-      background-color: #474747;
+      background-color: #E6E6E6;
       display: none;
       grid-area: nav;
       padding: 20px; }
@@ -474,8 +474,7 @@ header {
       height: 50vh; } }
   @media (min-width: 992px) {
     #section-1 {
-      height: 50vh;
-      background-position: -20px 0; } }
+      height: 100vh; } }
   @media (min-width: 1200px) {
     #section-1 {
       height: 100vh; } }
@@ -490,10 +489,12 @@ header {
 
 @media (min-width: 768px) {
   #section-2 #section-2-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     display: grid;
     grid-template-columns: 40% auto;
-    grid-template-areas: "aside section-2-section";
-    gap: 20px; } }
+    grid-template-areas: "aside section-2-section"; } }
 
 @media (min-width: 992px) {
   #section-2 #section-2-container {
@@ -526,8 +527,16 @@ header {
   display: grid;
   grid-template-columns: 10px auto 10px;
   grid-template-areas: ". section-2-content-text ."; }
-  #section-2 #section-2-container #section-2-content h3 {
-    margin-bottom: 20px; }
+  #section-2 #section-2-container #section-2-content #hr-1 {
+    background-color: #939C7F;
+    margin-bottom: 30px;
+    height: 2px;
+    border: solid #939C7F 1px; }
+  #section-2 #section-2-container #section-2-content #hr-2 {
+    background-color: #939C7F;
+    margin-top: 30px;
+    height: 2px;
+    border: solid #939C7F 1px; }
   @media (min-width: 768px) {
     #section-2 #section-2-container #section-2-content {
       grid-area: section-2-section; } }
@@ -568,6 +577,18 @@ header {
       grid-template-columns: 25% auto 25%; } }
   #section-3 #section-3-container #section-3-content {
     grid-area: section-3; }
+
+#section-3 #hr-1 {
+  background-color: #474747;
+  margin-bottom: 30px;
+  height: 1px;
+  border: solid #474747 1px; }
+
+#section-3 #hr-2 {
+  background-color: #474747;
+  margin-top: 30px;
+  height: 1px;
+  border: solid #474747 1px; }
 
 /* =============
     Section-4
@@ -640,7 +661,7 @@ header {
 @media (min-width: 992px) {
   #section-5 #section-5-desktop {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 30% 70%;
     grid-template-areas: ". section-5 ."; } }
 
 @media (min-width: 1200px) {
@@ -669,16 +690,39 @@ header {
       grid-template-columns: 20% auto 20%; } }
   #section-5 #section-5-desktop #section-5-container #section-5-content {
     grid-area: section-5; }
-
+    @media (min-width: 992px) {
+      #section-5 #section-5-desktop #section-5-container #section-5-content {
+        display: flex;
+        align-items: center;
+        justify-content: center; } }
 /* =============
     Footer
 ============= */
 footer {
   background-color: #939C7F;
   display: grid;
-  grid-template-columns: 45% auto 45%;
+  grid-template-columns: 20% auto 10%;
   grid-template-areas: ". footer ."; }
 
 #footer-content {
   grid-area: footer;
   color: #fff; }
+
+#logo {
+  line-height: 23px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: justify; }
+  @media (min-width: 768px) {
+    #logo {
+      font-size: 1.125rem; } }
+#date {
+  line-height: 23px;
+  font-family: 'Noto Serif', serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  text-align: right; }
+  @media (min-width: 768px) {
+    #date {
+      font-size: 0.75rem; } }

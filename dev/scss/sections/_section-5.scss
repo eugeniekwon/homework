@@ -12,7 +12,7 @@
     #section-5-desktop{
         @include lg{
             display: grid;
-            grid-template-columns: 40% 60%;
+            grid-template-columns: 30% 70%;
             grid-template-areas: ". section-5 ."
         }
     
@@ -44,9 +44,17 @@
         @include md{
             grid-template-columns: 20% auto 20%;
         }
+
+        
     
         #section-5-content{
             grid-area: section-5;
+
+            @include lg{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                }
             
         }
         }

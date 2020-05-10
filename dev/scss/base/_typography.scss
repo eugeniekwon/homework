@@ -22,7 +22,7 @@ h2{
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: rem-calc(26);
-    text-align: justify;
+    text-align: center;
 
     @include md{
         font-size: rem-calc(35);
@@ -47,5 +47,4 @@ p{
     }
 
 }
-
 

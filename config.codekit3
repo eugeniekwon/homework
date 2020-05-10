@@ -96,6 +96,17 @@
 		"opt": 1,
 		"q": 100
 		},
+	"/deploy/img/section-5/circle.jpg": {
+		"ft": 16384,
+		"iS": 33702,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-5/circle.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/img/section-5/circle.png": {
 		"ft": 32768,
 		"iS": 135644,
@@ -164,8 +175,8 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/deploy/js/scripts-min.js",
-		"oF": 2,
+		"oAP": "/dev/js/scripts-min.js",
+		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
