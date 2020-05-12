@@ -1,50 +1,50 @@
 /* =============
     Typography
 ============= */
-
-h1,h3,h4,h5,h6,p,figure{
+h1,
+h3,
+h4,
+h5,
+h6,
+p,
+figure {
+    font-family: 'Roboto', sans-serif;
+    font-size: rem-calc(25);
+    font-weight: 500;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: rem-calc(25);
     text-align: justify;
 
-    @include md{
+    @include md {
         font-size: rem-calc(35);
     }
-
 }
 
-h2{
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: rem-calc(26);
+    font-weight: 500;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: rem-calc(26);
     text-align: center;
 
-    @include md{
+    @include md {
         font-size: rem-calc(35);
     }
 
-    @include lg{
-     font-size: rem-calc(52);
+    @include lg {
+        font-size: rem-calc(52);
     }
 }
 
-
-
-p{
-    line-height: 23px;
-    font-family: 'Noto Serif', serif; 
-    font-weight: 400;
+p {
+    font-family: 'Noto Serif', serif;
     font-size: rem-calc(16);
+    font-weight: 400;
+    line-height: 23px;
     text-align: justify;
 
-    @include md{
+    @include md {
         font-size: rem-calc(18);
     }
-
 }
-

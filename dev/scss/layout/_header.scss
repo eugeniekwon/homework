@@ -1,27 +1,24 @@
 /* =============
     Header
 ============= */
-header{
-
-    h1{
-        color: $gray;
-    }
-
+header {
     background-color: $white;
     left: 0;
     position: fixed;
     top: 0;
     width: 100%;
 
+    h1 {
+        color: $gray;
+    }
 
     >div {
         display: grid;
-        grid-template-areas: 
-        "logo burger"
-        "nav nav";
+        grid-template-areas: "logo burger"
+            "nav nav";
         grid-template-columns: 80% auto;
 
-        @include lg{
+        @include lg {
             grid-template-areas: "logo nav";
             grid-template-columns: 50% auto;
         }
@@ -38,14 +35,14 @@ header{
             justify-content: flex-end;
             padding: 20px;
 
-            @include lg{
+            @include lg {
                 display: none !important;
             }
 
-            i{
+            i {
+                color: $gray;
                 cursor: pointer;
                 font-size: rem-calc(20);
-                color: $gray;
             }
         }
 
@@ -55,7 +52,7 @@ header{
             grid-area: nav;
             padding: 20px;
 
-            @include lg{
+            @include lg {
                 background-color: $white;
                 display: block !important;
             }

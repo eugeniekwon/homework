@@ -1,14 +1,14 @@
 /* =============
     Section-1
 ============= */
-#section-1{
+#section-1 {
 
     // #section-1-container{
-    
+
     //     display: grid; 
     //     grid-template-columns: 18px auto;
     //     grid-template-areas: ". section-1 .";
-        
+
     // #section-1-content{
     //     grid-area: section-1;
     //     }
@@ -19,17 +19,21 @@
     background-repeat: no-repeat;
     background-position: -10px 0;
     height: 50vh;
-    
-    @include md{
+    margin-top: 70px;
+
+    @include md {
         background-position: center;
         height: 50vh;
+        margin-top: 90px;
     }
 
-    @include lg{
+    @include lg {
         height: 100vh;
+        margin-top: 105px;
     }
 
-    @include xl{
+    @include xl {
         height: 100vh;
+        margin-top: 105px;
     }
 }

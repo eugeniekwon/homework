@@ -1,46 +1,39 @@
 /* =============
     Footer
 ============= */
-footer{
+footer {
     background-color: $green;
     display: grid;
-    grid-template-columns: 20% auto 10%;
     grid-template-areas: ". footer .";
+    grid-template-columns: 20% auto 10%;
+}
+
+#footer-content {
+    color: $white;
+    grid-area: footer;
+}
+
+// <!-- Specific Typoography" -->
+#logo {
+    font-family: 'Roboto', sans-serif;
+    font-size: rem-calc(16);
+    font-weight: 400;
+    line-height: 23px;
+    text-align: justify;
+
+    @include md {
+        font-size: rem-calc(18);
     }
+}
 
-    
-    #footer-content{
-        grid-area: footer;
-        color: $white;
+#date {
+    font-family: 'Noto Serif', serif;
+    font-size: rem-calc(12);
+    font-weight: 400;
+    line-height: 23px;
+    text-align: right;
+
+    @include md {
+        font-size: rem-calc(12);
     }
-    
-    
-    // <!-- Specific Typoography" -->
-    #logo{
-        line-height: 23px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400;
-        font-size: rem-calc(16);
-        text-align: justify;
-    
-        @include md{
-            font-size: rem-calc(18);
-        }
-    }
-
-    #date{
-            line-height: 23px;
-            font-family: 'Noto Serif', serif; 
-            font-weight: 400;
-            font-size: rem-calc(12);
-            text-align: right;
-        
-            @include md{
-                font-size: rem-calc(12);
-            }
-
-    }
-
-    
-
-
+}

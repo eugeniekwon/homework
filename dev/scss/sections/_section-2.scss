@@ -4,34 +4,28 @@
 #section-2 {
 
 
-    @include xl{
+    @include xl {
         display: grid;
         grid-template-columns: auto 1200px auto;
         grid-template-areas: ". section-2-container ."
-        }
+    }
 
 
     #section-2-container {
-        
-        @include md{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            
+
+        @include md {
             display: grid;
             grid-template-columns: 40% auto;
             grid-template-areas: "aside section-2-section";
-            
-            }
-            
-            
-        @include lg{
-            grid-template-columns: 50% 50%;
-            }
+        }
 
-        @include xl{ 
+        @include lg {
+            grid-template-columns: 50% 50%;
+        }
+
+        @include xl {
             grid-area: section-2-container;
-            }    
+        }
 
         aside {
             // @include md {
@@ -47,38 +41,44 @@
             background-repeat: no-repeat;
             background-position: center;
             height: 55vh;
-            
-            @include md{
+
+            @include md {
                 background-position: -5px 0;
                 height: 40vh;
 
-            @include lg{
-                background-position: center;
-                height: 70vh;
+                @include lg {
+                    background-position: center;
+                    height: 70vh;
+                }
+
+                @include xl {
+                    background-position: center;
+                    height: 90vh;
+                }
+
             }
 
-            @include xl{
-                background-position: center;
-                height: 90vh;
-            }
 
-            }
-            
-            
         }
 
 
         #section-2-content {
             color: $gray;
-            
-            #hr-1{
+
+            @include md {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #hr-1 {
                 background-color: $green;
                 margin-bottom: 30px;
                 height: 2px;
                 border: solid $green 1px;
             }
 
-            #hr-2{
+            #hr-2 {
                 background-color: $green;
                 margin-top: 30px;
                 height: 2px;
@@ -89,19 +89,21 @@
             grid-template-columns: 10px auto 10px;
             grid-template-areas: ". section-2-content-text .";
 
-            @include md{
+            @include md {
                 grid-area: section-2-section;
-        
+                margin: 0px 20px;
+
             }
 
             @include lg {
                 grid-template-columns: auto 50% auto;
+                margin: 0px 40px;
             }
-            
+
 
             #section-2-content-text {
                 grid-area: section-2-content-text;
-                
+
             }
         }
 

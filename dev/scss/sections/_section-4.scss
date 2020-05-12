@@ -6,7 +6,7 @@
     grid-template-columns: 0 auto 0;
     grid-template-areas: ". section-4 .";
 
-    @include xl{
+    @include xl {
         grid-template-columns: auto 1200px auto;
     }
 
@@ -16,9 +16,9 @@
         display: grid;
         gap: 20px;
         grid-template-areas:
-        "g1"
-        "g2"
-        "g3";
+            "g1"
+            "g2"
+            "g3";
 
 
         @include md {
@@ -28,9 +28,9 @@
             //     "g1 g1"
             //     "g2 g3";
             grid-template-areas:
-            "g1 g1"
-            "g1 g1"
-            "g2 g3";
+                "g1 g1"
+                "g1 g1"
+                "g2 g3";
         }
 
         @include lg {
@@ -41,14 +41,14 @@
                 "g1 g3";
             // margin: 0.5%;
             gap: 18px;
-        
+
         }
-        
+
 
         li {
             background-size: cover;
             background-position: center;
-            
+
 
 
             img {
@@ -59,33 +59,39 @@
         #g1 {
             background-image: url('../img/section-4/gallery-1.jpg');
             background-position: 0 -230px;
+
             @include md {
                 grid-area: g1;
                 background-position: 0 -300px;
             }
-            @include lg{
+
+            @include lg {
                 background-position: 0 -300px;
             }
         }
 
         #g2 {
             background-image: url('../img/section-4/gallery-2.jpg');
+
             @include md {
                 grid-area: g2;
                 background-position: -25px 0;
             }
-            @include lg{
+
+            @include lg {
                 background-position: center;
             }
         }
 
         #g3 {
             background-image: url('../img/section-4/gallery-3.jpg');
+
             @include md {
                 grid-area: g3;
                 background-position: -80px 0;
             }
-            @include lg{
+
+            @include lg {
                 background-position: center;
             }
         }

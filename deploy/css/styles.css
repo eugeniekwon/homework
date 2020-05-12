@@ -336,22 +336,34 @@ ul {
 /* =============
     Typography
 ============= */
-h1, h3, h4, h5, h6, p, figure {
+h1,
+h3,
+h4,
+h5,
+h6,
+p,
+figure {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5625rem;
+  font-weight: 500;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 1.5625rem;
   text-align: justify; }
   @media (min-width: 768px) {
-    h1, h3, h4, h5, h6, p, figure {
+    h1,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    figure {
       font-size: 2.1875rem; } }
 h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.625rem;
+  font-weight: 500;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 1.625rem;
   text-align: center; }
   @media (min-width: 768px) {
     h2 {
@@ -360,10 +372,10 @@ h2 {
     h2 {
       font-size: 3.25rem; } }
 p {
-  line-height: 23px;
   font-family: 'Noto Serif', serif;
-  font-weight: 400;
   font-size: 1rem;
+  font-weight: 400;
+  line-height: 23px;
   text-align: justify; }
   @media (min-width: 768px) {
     p {
@@ -444,9 +456,9 @@ header {
         header > div #burger-container {
           display: none !important; } }
       header > div #burger-container i {
+        color: #474747;
         cursor: pointer;
-        font-size: 1.25rem;
-        color: #474747; }
+        font-size: 1.25rem; }
     header > div #nav-container {
       background-color: #E6E6E6;
       display: none;
@@ -467,17 +479,21 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: -10px 0;
-  height: 50vh; }
+  height: 50vh;
+  margin-top: 70px; }
   @media (min-width: 768px) {
     #section-1 {
       background-position: center;
-      height: 50vh; } }
+      height: 50vh;
+      margin-top: 90px; } }
   @media (min-width: 992px) {
     #section-1 {
-      height: 100vh; } }
+      height: 100vh;
+      margin-top: 105px; } }
   @media (min-width: 1200px) {
     #section-1 {
-      height: 100vh; } }
+      height: 100vh;
+      margin-top: 105px; } }
 /* =============
     Section-2
 ============= */
@@ -489,9 +505,6 @@ header {
 
 @media (min-width: 768px) {
   #section-2 #section-2-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     display: grid;
     grid-template-columns: 40% auto;
     grid-template-areas: "aside section-2-section"; } }
@@ -527,6 +540,11 @@ header {
   display: grid;
   grid-template-columns: 10px auto 10px;
   grid-template-areas: ". section-2-content-text ."; }
+  @media (min-width: 768px) {
+    #section-2 #section-2-container #section-2-content {
+      display: flex;
+      align-items: center;
+      justify-content: center; } }
   #section-2 #section-2-container #section-2-content #hr-1 {
     background-color: #939C7F;
     margin-bottom: 30px;
@@ -539,10 +557,12 @@ header {
     border: solid #939C7F 1px; }
   @media (min-width: 768px) {
     #section-2 #section-2-container #section-2-content {
-      grid-area: section-2-section; } }
+      grid-area: section-2-section;
+      margin: 0px 20px; } }
   @media (min-width: 992px) {
     #section-2 #section-2-container #section-2-content {
-      grid-template-columns: auto 50% auto; } }
+      grid-template-columns: auto 50% auto;
+      margin: 0px 40px; } }
   #section-2 #section-2-container #section-2-content #section-2-content-text {
     grid-area: section-2-content-text; }
 
@@ -701,27 +721,27 @@ header {
 footer {
   background-color: #939C7F;
   display: grid;
-  grid-template-columns: 20% auto 10%;
-  grid-template-areas: ". footer ."; }
+  grid-template-areas: ". footer .";
+  grid-template-columns: 20% auto 10%; }
 
 #footer-content {
-  grid-area: footer;
-  color: #fff; }
+  color: #fff;
+  grid-area: footer; }
 
 #logo {
-  line-height: 23px;
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
   font-size: 1rem;
+  font-weight: 400;
+  line-height: 23px;
   text-align: justify; }
   @media (min-width: 768px) {
     #logo {
       font-size: 1.125rem; } }
 #date {
-  line-height: 23px;
   font-family: 'Noto Serif', serif;
-  font-weight: 400;
   font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 23px;
   text-align: right; }
   @media (min-width: 768px) {
     #date {
