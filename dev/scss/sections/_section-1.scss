@@ -2,22 +2,10 @@
     Section-1
 ============= */
 #section-1 {
-
-    // #section-1-container{
-
-    //     display: grid; 
-    //     grid-template-columns: 18px auto;
-    //     grid-template-areas: ". section-1 .";
-
-    // #section-1-content{
-    //     grid-area: section-1;
-    //     }
-    // }
-
     background-image: url('../img/section-1/hero.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
     background-position: -10px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 50vh;
     margin-top: 70px;
 

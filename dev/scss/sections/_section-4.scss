@@ -3,53 +3,40 @@
 ============= */
 #section-4 {
     display: grid;
-    grid-template-columns: 0 auto 0;
     grid-template-areas: ". section-4 .";
+    grid-template-columns: 0 auto 0;
 
     @include xl {
         grid-template-columns: auto 1200px auto;
     }
 
     ul {
-        grid-area: section-4;
-        grid-template-rows: repeat(3, 290px);
         display: grid;
         gap: 20px;
-        grid-template-areas:
-            "g1"
+        grid-area: section-4;
+        grid-template-areas: "g1"
             "g2"
             "g3";
-
+        grid-template-rows: repeat(3, 290px);
 
         @include md {
-            // grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(3, 340px);
-            // grid-template-areas:
-            //     "g1 g1"
-            //     "g2 g3";
-            grid-template-areas:
-                "g1 g1"
+            grid-template-areas: "g1 g1"
                 "g1 g1"
                 "g2 g3";
+            grid-template-rows: repeat(3, 340px);
         }
 
         @include lg {
+            gap: 18px;
+            grid-template-areas: "g1 g2"
+                "g1 g3";
             grid-template-columns: 60% auto;
             grid-template-rows: repeat(2, 350px);
-            grid-template-areas:
-                "g1 g2"
-                "g1 g3";
-            // margin: 0.5%;
-            gap: 18px;
-
         }
 
-
         li {
-            background-size: cover;
             background-position: center;
-
-
+            background-size: cover;
 
             img {
                 width: 100%;
@@ -61,8 +48,8 @@
             background-position: 0 -230px;
 
             @include md {
-                grid-area: g1;
                 background-position: 0 -300px;
+                grid-area: g1;
             }
 
             @include lg {
@@ -74,8 +61,8 @@
             background-image: url('../img/section-4/gallery-2.jpg');
 
             @include md {
-                grid-area: g2;
                 background-position: -25px 0;
+                grid-area: g2;
             }
 
             @include lg {
@@ -87,8 +74,8 @@
             background-image: url('../img/section-4/gallery-3.jpg');
 
             @include md {
-                grid-area: g3;
                 background-position: -80px 0;
+                grid-area: g3;
             }
 
             @include lg {

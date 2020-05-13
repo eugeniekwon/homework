@@ -476,9 +476,9 @@ header {
 ============= */
 #section-1 {
   background-image: url("../img/section-1/hero.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
   background-position: -10px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 50vh;
   margin-top: 70px; }
   @media (min-width: 768px) {
@@ -548,13 +548,13 @@ header {
   #section-2 #section-2-container #section-2-content #hr-1 {
     background-color: #939C7F;
     margin-bottom: 30px;
-    height: 2px;
-    border: solid #939C7F 1px; }
+    height: 3px;
+    border: none; }
   #section-2 #section-2-container #section-2-content #hr-2 {
     background-color: #939C7F;
     margin-top: 30px;
-    height: 2px;
-    border: solid #939C7F 1px; }
+    height: 3px;
+    border: none; }
   @media (min-width: 768px) {
     #section-2 #section-2-container #section-2-content {
       grid-area: section-2-section;
@@ -571,9 +571,9 @@ header {
 ============= */
 #section-3 aside {
   background-image: url("../img/section-3/hero-3.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 70vh; }
   @media (min-width: 768px) {
     #section-3 aside {
@@ -585,10 +585,10 @@ header {
     #section-3 aside {
       height: 90vh; } }
 #section-3 #section-3-container {
+  color: #939C7F;
   display: grid;
-  grid-template-columns: 10px auto 10px;
   grid-template-areas: ". section-3 .";
-  color: #939C7F; }
+  grid-template-columns: 10px auto 10px; }
   @media (min-width: 768px) {
     #section-3 #section-3-container {
       grid-template-columns: 15% auto 15%; } }
@@ -600,45 +600,45 @@ header {
 
 #section-3 #hr-1 {
   background-color: #474747;
-  margin-bottom: 30px;
-  height: 1px;
-  border: solid #474747 1px; }
+  border: none;
+  height: 3px;
+  margin-bottom: 30px; }
 
 #section-3 #hr-2 {
   background-color: #474747;
-  margin-top: 30px;
-  height: 1px;
-  border: solid #474747 1px; }
+  border: none;
+  height: 3px;
+  margin-top: 30px; }
 
 /* =============
     Section-4
 ============= */
 #section-4 {
   display: grid;
-  grid-template-columns: 0 auto 0;
-  grid-template-areas: ". section-4 ."; }
+  grid-template-areas: ". section-4 .";
+  grid-template-columns: 0 auto 0; }
   @media (min-width: 1200px) {
     #section-4 {
       grid-template-columns: auto 1200px auto; } }
   #section-4 ul {
-    grid-area: section-4;
-    grid-template-rows: repeat(3, 290px);
     display: grid;
     gap: 20px;
-    grid-template-areas: "g1" "g2" "g3"; }
+    grid-area: section-4;
+    grid-template-areas: "g1" "g2" "g3";
+    grid-template-rows: repeat(3, 290px); }
     @media (min-width: 768px) {
       #section-4 ul {
-        grid-template-rows: repeat(3, 340px);
-        grid-template-areas: "g1 g1" "g1 g1" "g2 g3"; } }
+        grid-template-areas: "g1 g1" "g1 g1" "g2 g3";
+        grid-template-rows: repeat(3, 340px); } }
     @media (min-width: 992px) {
       #section-4 ul {
-        grid-template-columns: 60% auto;
-        grid-template-rows: repeat(2, 350px);
+        gap: 18px;
         grid-template-areas: "g1 g2" "g1 g3";
-        gap: 18px; } }
+        grid-template-columns: 60% auto;
+        grid-template-rows: repeat(2, 350px); } }
     #section-4 ul li {
-      background-size: cover;
-      background-position: center; }
+      background-position: center;
+      background-size: cover; }
       #section-4 ul li img {
         width: 100%; }
     #section-4 ul #g1 {
@@ -646,8 +646,8 @@ header {
       background-position: 0 -230px; }
       @media (min-width: 768px) {
         #section-4 ul #g1 {
-          grid-area: g1;
-          background-position: 0 -300px; } }
+          background-position: 0 -300px;
+          grid-area: g1; } }
       @media (min-width: 992px) {
         #section-4 ul #g1 {
           background-position: 0 -300px; } }
@@ -655,8 +655,8 @@ header {
       background-image: url("../img/section-4/gallery-2.jpg"); }
       @media (min-width: 768px) {
         #section-4 ul #g2 {
-          grid-area: g2;
-          background-position: -25px 0; } }
+          background-position: -25px 0;
+          grid-area: g2; } }
       @media (min-width: 992px) {
         #section-4 ul #g2 {
           background-position: center; } }
@@ -664,8 +664,8 @@ header {
       background-image: url("../img/section-4/gallery-3.jpg"); }
       @media (min-width: 768px) {
         #section-4 ul #g3 {
-          grid-area: g3;
-          background-position: -80px 0; } }
+          background-position: -80px 0;
+          grid-area: g3; } }
       @media (min-width: 992px) {
         #section-4 ul #g3 {
           background-position: center; } }
@@ -675,36 +675,35 @@ header {
 @media (min-width: 1200px) {
   #section-5 {
     display: grid;
-    grid-template-columns: auto 1200px auto;
-    grid-template-areas: ". section-3-desktop ."; } }
+    grid-template-areas: ". section-3-desktop .";
+    grid-template-columns: auto 1200px auto; } }
 
 @media (min-width: 992px) {
   #section-5 #section-5-desktop {
     display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-areas: ". section-5 ."; } }
+    grid-template-columns: 30% 70%; } }
 
 @media (min-width: 1200px) {
   #section-5 #section-5-desktop {
     grid-area: section-3-desktop; } }
 
-#section-5 #section-5-desktop aside img {
-  width: 100%; }
-
-@media (min-width: 768px) {
-  #section-5 #section-5-desktop aside {
-    margin: 0px 220px; } }
-
-@media (min-width: 992px) {
-  #section-5 #section-5-desktop aside {
-    margin: 0px 10px; } }
-
+#section-5 #section-5-desktop #section-5-img {
+  background-image: url("../img/section-5/circle.jpg");
+  background-position: center;
+  border-radius: 100%;
+  height: 300px;
+  margin: 0 auto;
+  width: 300px; }
+  @media (min-width: 768px) {
+    #section-5 #section-5-desktop #section-5-img {
+      height: 318px;
+      width: 318px; } }
 #section-5 #section-5-desktop #section-5-container {
+  color: #474747;
   display: grid;
-  grid-template-columns: 10px auto 10px;
   grid-template-areas: ". section-5 .";
-  margin: 20px 0px;
-  color: #474747; }
+  grid-template-columns: 10px auto 10px;
+  margin: 20px 0px; }
   @media (min-width: 768px) {
     #section-5 #section-5-desktop #section-5-container {
       grid-template-columns: 20% auto 20%; } }
@@ -712,8 +711,8 @@ header {
     grid-area: section-5; }
     @media (min-width: 992px) {
       #section-5 #section-5-desktop #section-5-container #section-5-content {
-        display: flex;
         align-items: center;
+        display: flex;
         justify-content: center; } }
 /* =============
     Footer
